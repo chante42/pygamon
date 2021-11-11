@@ -383,7 +383,7 @@
   <object id="60" name="enter_house_exit" x="96.8482" y="360.791">
    <point/>
   </object>
-  <object id="61" name="exit-house2" x="519" y="610">
+  <object id="61" name="exit_house2" x="519" y="610">
    <point/>
   </object>
   <object id="63" name="enter_house2" x="489.5" y="561.5" width="16.625" height="26.25"/>
