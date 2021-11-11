@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="50" height="50" tilewidth="16" tileheight="16" infinite="0" nextlayerid="7" nextobjectid="56">
+<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="50" height="50" tilewidth="16" tileheight="16" infinite="0" nextlayerid="9" nextobjectid="60">
  <tileset firstgid="1" source="dungeon.tsx"/>
  <layer id="1" name="floor" width="50" height="50">
   <data encoding="csv">
@@ -200,8 +200,8 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,45,46,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,61,62,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,45,46,146,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,61,62,146,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -263,7 +263,7 @@
   <object id="44" type="collision" x="559.667" y="556" width="37.3333" height="5.33333"/>
   <object id="45" type="collision" x="164.667" y="487.667" width="23" height="20"/>
   <object id="46" type="collision" x="260.333" y="489.667" width="25" height="21"/>
-  <object id="47" type="collision" x="196.667" y="568.333" width="21.3333" height="19.3333"/>
+  <object id="47" type="collision" x="178.667" y="567.667" width="21.3333" height="19.3333"/>
   <object id="48" type="collision" x="339" y="468.667" width="27" height="21"/>
   <object id="49" type="collision" x="371" y="469" width="26.6667" height="19.6667"/>
   <object id="50" type="collision" x="405.333" y="469" width="23" height="19.6667"/>
@@ -272,5 +272,11 @@
   <object id="54" name="spawn_dungeon" x="273.333" y="604.333">
    <point/>
   </object>
+ </objectgroup>
+ <objectgroup id="8" name="NPCPath">
+  <object id="56" name="boss_path1" x="208.333" y="527" width="15" height="16.6667"/>
+  <object id="57" name="boss_path2" x="511.667" y="528" width="15.6667" height="15.6667"/>
+  <object id="58" name="boss_path3" x="512.333" y="608.667" width="14.6667" height="15.6667"/>
+  <object id="59" name="boss_path4" x="208" y="608" width="15.3333" height="15.6667"/>
  </objectgroup>
 </map>
