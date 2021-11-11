@@ -28,7 +28,8 @@ class MapManager:
         
         self.register_map("world", portals =[
             Portal(from_world="world", origin_point="enter_house", target_world="house", teleport_point="spawn_house"),
-            Portal(from_world="world", origin_point="enter_house2", target_world="house2", teleport_point="spawn_house")
+            Portal(from_world="world", origin_point="enter_house2", target_world="house2", teleport_point="spawn_house"),
+            Portal(from_world="world", origin_point="enter_dungeon", target_world="dungeon", teleport_point="spawn_dungeon")
         ])
         
         self.register_map("house", portals = [
@@ -37,6 +38,10 @@ class MapManager:
         
         self.register_map("house2", portals = [
             Portal(from_world="house2", origin_point="exit_house", target_world="world", teleport_point="exit_house2")
+        ])
+        
+        self.register_map("dungeon", portals = [
+            Portal(from_world="dungeon", origin_point="exit_dungeon", target_world="world", teleport_point="dungeon_exit_spawn")
         ])
         
         self.teleport_player("player")
@@ -85,7 +90,7 @@ class MapManager:
                 walls.append(pygame.Rect(obj.x, obj.y, obj.width, obj.height))
             
         # dessiner le  groupe  de calque
-        group = pyscroll.PyscrollGroup(map_layer=map_layer, default_layer=5)
+        group = pyscroll.PyscrollGroup(map_layer=map_layer, default_layer=6)
         group.add(self.player)
         
         #Enregister la nouvelle carte chargée
