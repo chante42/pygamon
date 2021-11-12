@@ -57,10 +57,11 @@ class Player(Entity):
 
 class NPC(Entity):
     
-    def __init__(self, name, nb_points):
+    def __init__(self, name, nb_points, dialog):
         super().__init__(name, 0, 0)
         self.name = name
         self.nb_points = nb_points
+        self.dialog = dialog
         self.points = []
         self.speed = 0.1 #en mettant 1 les controle de passage par les path_rec fonctionne sinon non
         self.current_point = 0
